@@ -85,10 +85,8 @@ img {
 
 .header-conteiner {
 	display: flex;
-	justify-content: space-between;
 }
 .header-logoweb,
-.header-logostudio,
 .header-logostudio-w {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -108,8 +106,9 @@ img {
 	color: var(--logostudio-w-color);
 }
 
-address {
+.contact-list {
 	font-style: normal;
+	margin-left: auto;
 }
 
 .head-link {
@@ -140,12 +139,9 @@ address {
 .hero {
 	background: var(--logostudio-color);
 	padding: 188px 0;
+	text-align: center;
 }
-.hero-conteiner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 .hero-title {
 	font-size: 56px;
 	line-height: 1.07;
@@ -153,7 +149,8 @@ address {
 	letter-spacing: 0.02em;
 	text-align: center;
 	color: var(--hero-title-color);
-	width: 496px;
+	max-width: 496px;
+	margin: 0 auto;
 	margin-bottom: 48px;
 }
 .hero-btn {
@@ -182,7 +179,6 @@ address {
 .strategy-list {
 	display: flex;
 	gap: 24px;
-	flex-wrap: wrap;
 }
 .strategy {
 	font-weight: 500;
@@ -215,12 +211,12 @@ address {
 	text-align: center;
 	margin-bottom: 72px;
 }
-.work-item {
+.work {
+	padding-top: 0;
 }
 .work-list {
 	display: flex;
 	gap: 24px;
-	flex-wrap: wrap;
 }
 .work-link {
 	flex-basis: calc((100% - 48px) / 3);
@@ -243,12 +239,15 @@ address {
 	letter-spacing: 0.02em;
 	text-align: center;
 	text-transform: capitalize;
-	text-align: center;
+
 	color: var(--logostudio-color);
 	margin-bottom: 72px;
 }
 .team-photo {
-	background: var(--hero-title-color);
+	background-color: var(--hero-title-color);
+	/* background: #FFFFFF; */
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -259,7 +258,6 @@ address {
 	color: var(--logostudio-color);
 	margin-bottom: 8px;
 	text-align: center;
-	padding-top: 32px;
 }
 .team-description {
 	font-size: 16px;
@@ -267,13 +265,15 @@ address {
 	letter-spacing: 0.02em;
 	color: var(--contakt-color);
 	text-align: center;
+}
+.text-a {
 	padding-bottom: 32px;
 }
-
 /* footer -----------------------------------------------*/
 .footer {
 	background: var(--logostudio-color);
-	padding: 100px 156px;
+	padding: 100px 0;
+	padding-left: 156px;
 }
 
 .header-logostudio-w {
@@ -291,6 +291,13 @@ address {
 .item {
 	list-style: none;
 }
+
+.portfolio-list {
+	display: flex;
+	justify-content: center;
+	margin-top: 96px;
+	gap: 24px;
+}
 .portfolio-btn {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -303,14 +310,6 @@ address {
 	border-radius: 4px;
 	cursor: pointer;
 	padding: 12px 24px 12px 24px;
-}
-.work-list {
-	display: flex;
-	justify-content: center;
-	margin-top: 96px;
-	gap: 24px;
-	margin-bottom: 72px;
-	flex-wrap: wrap;
 }
 
 .portfolio-btn:hover {
@@ -345,7 +344,8 @@ address {
 	display: flex;
 	gap: 48px 24px;
 	flex-wrap: wrap;
-	padding-bottom: 128px;
+	padding-top: 72px;
+	padding-bottom: 120px;
 }
 .services-list > .services-item {
 	flex-basis: calc((100% - 48px) / 3);
