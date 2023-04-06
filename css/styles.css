@@ -267,13 +267,13 @@ img {
 	text-align: center;
 }
 .text-a {
+	padding-top: 32px;
 	padding-bottom: 32px;
 }
 /* footer -----------------------------------------------*/
 .footer {
 	background: var(--logostudio-color);
 	padding: 100px 0;
-	padding-left: 156px;
 }
 
 .header-logostudio-w {
@@ -295,7 +295,6 @@ img {
 .portfolio-list {
 	display: flex;
 	justify-content: center;
-	margin-top: 96px;
 	gap: 24px;
 }
 .portfolio-btn {
@@ -344,8 +343,7 @@ img {
 	display: flex;
 	gap: 48px 24px;
 	flex-wrap: wrap;
-	padding-top: 72px;
-	padding-bottom: 120px;
+	margin-top: 72px;
 }
 .services-list > .services-item {
 	flex-basis: calc((100% - 48px) / 3);
